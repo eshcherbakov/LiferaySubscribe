@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+
+<service-builder package-path="ru.inrecolan.subscribe.model">
+	<namespace>Subscribe</namespace>
+	<entity name="Subscribe" local-service="true">
+		<column name="subscribeId" type="long" primary="true"></column>
+		<column name="email" type="String"></column>
+		<column name="subscribeDate" type="Date"></column>
+		<column name="isActivated" type="boolean"></column>
+		
+		<finder name="email" return-type="Collection">
+			<finder-column name="email"></finder-column>
+		</finder>
+		<finder name="isActivated" return-type="Collection">
+			<finder-column name="isActivated"></finder-column>
+		</finder>
+	</entity>
+</service-builder>

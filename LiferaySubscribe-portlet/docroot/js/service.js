@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.Subscribe", "ru.inrecolan.subscribe.model.service", "Subscribe-portlet");

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="ru.inrecolan.subscribe.model.service.SubscribeLocalService" class="ru.inrecolan.subscribe.model.service.impl.SubscribeLocalServiceImpl" />
+	<bean id="ru.inrecolan.subscribe.model.service.SubscribeService" class="ru.inrecolan.subscribe.model.service.impl.SubscribeServiceImpl" />
+	<bean id="ru.inrecolan.subscribe.model.service.persistence.SubscribePersistence" class="ru.inrecolan.subscribe.model.service.persistence.SubscribePersistenceImpl" parent="basePersistence" />
+</beans>

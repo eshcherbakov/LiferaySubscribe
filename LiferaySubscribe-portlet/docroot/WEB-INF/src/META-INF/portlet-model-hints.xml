@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="ru.inrecolan.subscribe.model.model.Subscribe">
+		<field name="subscribeId" type="long" />
+		<field name="email" type="String" />
+		<field name="subscribeDate" type="Date" />
+		<field name="isActivated" type="boolean" />
+	</model>
+</model-hints>

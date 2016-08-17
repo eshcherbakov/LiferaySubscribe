@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="ru.inrecolan.subscribe.model.model.Subscribe" />
+	<class name="ru.inrecolan.subscribe.model.model.impl.SubscribeImpl" table="Subscribe_Subscribe">
+		<cache usage="read-write" />
+		<id name="subscribeId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="subscribeDate" type="org.hibernate.type.TimestampType" />
+		<property name="isActivated" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>
